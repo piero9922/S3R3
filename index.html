@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>S3R3</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <style>
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #1687a0;
+      }
+      h1 {
+            text-align: center;
+            font-size: 36px;
+            color: white;
+      }
+
+      .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        ::-webkit-input-placeholder {
+           font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+
+      .container-names .name{
+            margin: 10px;
+            width: 250px;
+            height: 40px;
+            padding: 5px 15px;
+        }
+      
+
+      .container-names .lastname{
+            margin: 10px;
+            width: 250px;
+            height: 40px;
+            padding: 5px 15px;
+        }
+
+      .container-data .email{
+            margin: 10px;
+            width: 250px;
+            height: 40px;
+            padding: 5px 15px;
+        }
+
+      .container-data .phone{
+            margin: 10px;
+            width: 250px;
+            height: 40px;
+            padding: 5px 15px;
+        }
+      
+      .container-information .description{
+            margin: 10px;
+            width: 561px;
+            height: 100px;
+            resize: none;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .botton{
+            margin: 20px;
+        }
+
+        .botton button{
+            padding: 15px 40px;
+            text-transform: uppercase;
+            background: #233451;
+            border: 1px solid #233451;
+            color: white;
+        }
+    </style>
+    <section>
+      <h1>Contacto</h1>
+      <form class="container" action="#">
+          <div class="container-names">
+              <input class="name" type="text" placeholder="Nombre" required pattern="[A-za-z]+"/>
+              <input class="lastname" type="text" placeholder="Apellido" required pattern="[A-za-z]+"/>
+          </div>
+          <div class="container-data">
+              <input class="email" type="text" placeholder="Email" required/>
+              <input class="phone" type="text" placeholder="Telefono"required pattern="[0-9]+"/>
+          </div>
+          <div class="container-information">
+              <textarea class="description" placeholder="Descripcion" maxlength="100" required pattern="[A-za-z0-9]+" ></textarea>
+        </div>
+        <div class="botton">
+            <button>Enviar</button>
+          </form>
+        </div>
+      </form>
+    </section>
+  </body>
 </html>
