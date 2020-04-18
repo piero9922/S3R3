@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>S3R3</title>
+  </head>
+  <body>
+      <h1>Formulario</h1>
+    <form action="#">
+
+        <fieldset class="name">
+            <legend>Nombre</legend>
+            <input type="text" placeholder="Nombre" required pattern="[A-z]+"/>
+        </fieldset>
+
+      <fieldset class="lastname">
+          <legend>Apellido</legend>
+              <input type="text" placeholder="Apellido" required pattern="[A-z]+"/>
+      </fieldset>
+      
+      <fieldset class="age">
+          <legend>Edad</legend>
+              <input type="number" placeholder="Edad" required min="18" max="80"/>
+      </fieldset>
+
+    <fieldset class="sexo">
+        <legend>Sexo</legend>
+            <input type="text" placeholder="Sexo" required/>
+    </fieldset>
+      
+    <fieldset class="dni">
+        <legend>DNI</legend>
+        <input type="text" minlength="8" placeholder="Numero de Documento" required pattern="[a-z0-9]+"/>
+    </fieldset>
+
+    <fieldset class="email">
+        <legend>Correo</legend>
+            <input type="email" placeholder="Correo" required/>
+    </fieldset>
+    
+     <fieldset class="bottom">
+         <button class="submit">Enviar</button>
+         <button class="reset" type="reset" >Reset</button>
+     </fieldset>
+    </form>
+  </body>
+</html>

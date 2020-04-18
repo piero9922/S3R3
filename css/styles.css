@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name{
+    margin: 10px;
+    padding: 15px;
+}
+.lastname{
+    margin: 10px;
+    padding: 15px;
+}
+
+.age{
+    margin: 10px;
+    padding: 15px;
+}
+
+.sexo{
+    margin: 10px;
+    padding: 15px;
+}
+
+.dni{
+    margin: 10px;
+    padding: 15px;
+}
+
+.email{
+    margin: 10px;
+    padding: 15px;
+}
+
+.bottom{
+    margin: 10px;
+    padding: 15px;
+
+}
+.bottom .submit{
+    padding: 10px;
+    border-radius: 10px;
+    background: darkkhaki;
+    font-weight: bolder;
+}
+
+.bottom .reset{
+    padding: 10px;
+    border-radius: 10px;
+    background: darkkhaki;
+    font-weight: bolder;
+
+}
+
+
+input:focus{
+    border: 2px solid lightcyan;
+    background: lightcyan;
+}
+
+
+
